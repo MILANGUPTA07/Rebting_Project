@@ -66,6 +66,14 @@ body {
   overflow-x: hidden;
 }
 
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

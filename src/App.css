@@ -1,6 +1,6 @@
 
 .product-list {
-  border: 2px solid green;
+ 
   min-height: 200px;
   display: flex;
   flex-direction: row;
@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 .product-card {
-  border: 2px solid orange;
+ 
   width: 250px;
   min-height: 100px;
   background: #fff;
@@ -20,7 +20,7 @@
 .cart {
   max-width: 600px;
   margin: 32px auto;
-  background: #fff;
+  background: #f5f3f3;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   padding: 32px 24px;
@@ -186,5 +186,25 @@
     display: block !important;
     position: static !important;
     box-sizing: border-box;
+  }
+  nav a,
+  nav a:visited,
+  nav a:active,
+  nav a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  aside ul {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  aside ul li {
+    margin-bottom: 0;
+    flex: 1 1 auto;
   }
 }

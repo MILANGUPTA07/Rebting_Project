@@ -117,10 +117,12 @@ function AppContent() {
     <>
       <Navbar cartCount={cart.length} />
       <div style={{ display: "flex", alignItems: "flex-start" }}>
-        <CategoriesSidebar
-          selectedCategory={selectedCategory}
-          onSelectCategory={setSelectedCategory}
-        />
+        {(location.pathname === "/" || location.pathname === "/cart") && (
+          <CategoriesSidebar
+            selectedCategory={selectedCategory}
+            onSelectCategory={setSelectedCategory}
+          />
+        )}
         <div style={{ flex: 1, padding: 24 }}>
           <Routes>
             <Route
